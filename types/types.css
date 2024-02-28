@@ -1,0 +1,124 @@
+.pic{
+    border: 1px solid rgb(172, 172, 172);
+    width: 230px;
+    height: 360px;
+    border-radius: 7px;
+    position: relative;
+    margin-left: 40px;
+}
+.range-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pic img{
+    display: inline;
+    width: 230px;
+    height: 260px;
+}
+.range-card1 h1,p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: papyrus;
+}
+.range-card1 p{
+   color: black;
+}
+.pic p{
+    font-size: 13px;
+    margin-top: 0;
+}
+.pic a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-size: 20px;
+}
+.pic button{
+    background-color: rgb(255, 224, 229);
+    width: 90px;
+    height: 30px;
+    border-radius: 7px;
+    border: 1px solid  rgb(255, 224, 229) ;
+    padding: 0;
+}
+.text-shadow h1{
+    text-shadow:  3px 3px 3px pink;
+}
+.card2{
+    margin-top: 200px;
+}
+.pic-words{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 10px;
+    padding: 0;
+}
+.pic-words h3{
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.arrow-right{
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+.next-page{
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+.page1{
+    border: 1px solid palevioletred;
+    width: 20px;
+    height: 30px;
+    border-radius: 5px;
+    background-color:rgb(246, 246, 246);
+    padding-left: 10px;
+}
+.next-page img{
+    height: 40px;
+    width: 40px;
+    margin-left: 15px;
+}
+.next-page h2{
+    margin-left: 20px;
+}
+@media only screen and (max-width: 450px){
+    .pic3{display: none;}
+    .pic4{display: none;}
+    .range-card1 p{
+        font-size: 10px;
+    }
+    .range-card1 h1{font-size: 17px;}
+    .range-card1{ margin-top: 100px;}
+    .pic{
+        width: 130px;
+        height: 190px;
+    }
+    .pic img{
+        width: 130px;
+        height: 120px;
+    }
+    .pic h3{font-size: 13px;}
+    .pic p{font-size: 7px;}
+    .pic button{
+        width: 50px;
+        height: 20px;
+        font-size: 7px;
+    }
+    .arrow-right{
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
+    }
+
+}

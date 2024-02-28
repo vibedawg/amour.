@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>account</title>
+    <link rel="stylesheet" href="web2.css">
+</head>
+
+<body>
+    <div class="account">
+        <form>
+            <h1>CREATE AN ACCOUNT</h1>
+            <label for="fname">First name:</label><br>
+            <input type="text" name="fname" placeholder="Write your first name">
+            <br>
+            <br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" name="lname" placeholder="Write your last name">
+            <br>
+            <br>
+            <label for="email">Write your number:</label><br>
+            <input type="text" name="email" placeholder="Write your number" autocomplete="on">
+            <br>
+            <br>
+            <form>
+                <label for="city">Choose a city:</label>
+                <br>
+                <input list="cities" name="city">
+                <datalist id="cities">
+                    <option value="Almaty">
+                    <option value="Astana">
+                    <option value="Shymkent">
+                    <option value="Atyrau">
+                    <option value="Taraz">
+                </datalist>
+                <br>
+                <br>
+                <input class="submit" type="submit" value="Submit">
+            </form>
+        </form>
+    </div>
+
+</body>
+
+</html>
