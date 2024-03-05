@@ -67,7 +67,7 @@ body{
 .pic{
     border: 1px solid rgb(172, 172, 172);
     width: 230px;
-    height: 360px;
+    height: 340px;
     border-radius: 7px;
     position: relative;
     margin-left: 40px;
@@ -75,8 +75,12 @@ body{
 .range-card{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
+    overflow-x: auto;
+}
+.range-card::-webkit-scrollbar{
+    display: none;
 }
 
 .pic img{
@@ -109,15 +113,6 @@ body{
     color: white;
     font-size: 20px;
 }
-.pic button{
-    background-color: rgb(255, 224, 229);
-    width: 90px;
-    height: 30px;
-    border-radius: 7px;
-    border: 1px solid  rgb(255, 224, 229) ;
-    padding: 0;
-    margin-left: 10px;
-}
 .text-shadow h1{
     text-shadow:  3px 3px 3px pink;
 }
@@ -146,8 +141,12 @@ body{
 .holiday-cards{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
+    overflow-x: auto;
+}
+.holiday-cards::-webkit-scrollbar{
+    display: none;
 }
 .pic1{
    margin-bottom: 20px;

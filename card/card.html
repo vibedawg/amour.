@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="cardInfo.css">
+    <title>FLOWERS</title>
+    <link rel="stylesheet" href="card.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
         </div>
         <div class="header-media">
             <ul class="header-media-link">
-                <a>
+                <a href="../web.html">
                     <li>Home</li>
                 </a>
                 <a>
@@ -37,7 +37,7 @@
             <a>
                 <ion-icon name="heart-outline"></ion-icon>
             </a>
-            <a>
+            <a href="../cart/cart.html">
                 <ion-icon name="cart-outline"></ion-icon>
             </a>
         </div>
@@ -46,28 +46,28 @@
     <div class="product-information-container">
         <div class="product-item">
             <div class="info-item1">
-                <img src="../assets/img/wedding1.jpg" />
+                <img  id="Img" src="" />
                 <div class="main-info">
-                    <h1>CALLA</h1>
-                    <p>bouquet of 19 branches</p>
-                    <h1>29500 kzt</h1>
+                    <h1 id="f-name"></h1>
+                    <p id="branches-p"></p>
+                    <h1 id="price"></h1>
                     <form>
                         <label for="size">SIZE:</label>
                         <br>
-                        <input list="flowersSize" name="size">
+                        <input list="flowersSize" name="size" value="S">
                         <datalist id="flowersSize">
                             <option value="S">
                             <option value="M">
                             <option value="L">
                         </datalist>
                     </form>
-                    <div class="cart-item-amount">
-                        <button><ion-icon name="trash-outline"></ion-icon></button>
-                        <p>0</p>
+                    <!-- <div class="cart-item-amount">
+                        <button><ion-icon name="remove"></ion-icon></button>
+                        <p>1</p>
                         <button><ion-icon name="add-outline"></ion-icon></button>
-                    </div>
+                    </div> -->
                     <div class="cart-item-button">
-                        <button>ADD TO CART</button>
+                        <button class="cart_btn">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="delivery">
@@ -87,7 +87,7 @@
 
             </div>
             <div class="product-info">
-                <p> <b>Description</b>:
+                <p id="description"> <b>Description</b>:
                     <hr>
                     There are 8 species and numerous cultivars of 'Calla lily'. They are herbaceous, bulbous perennials
                     with
@@ -146,7 +146,7 @@
         </div>
     </div>
 
-    <script src="./cardInfo.js"></script>
+    <script src="./card.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

@@ -1,10 +1,10 @@
 
-function createCard(data) {
+function createCard(data,type) {
     const cardDiv = document.createElement("div");
     cardDiv.classList.add("pic", "pic0");
 
     const image = document.createElement("img");
-    image.src = data.imageSrc
+    image.src = `./`+data.imageSrc
     cardDiv.appendChild(image);
 
     const heartIcon = document.createElement("a");
@@ -21,26 +21,14 @@ function createCard(data) {
     descriptionElement.textContent = data.description + ' - ' + data.price;
     cardDiv.appendChild(descriptionElement);
 
-    const button = document.createElement("button");
-    button.textContent = "Add to cart";
-    if (isAddedToCart(data)) {
-        button.textContent = "Added to cart";
-        button.enabled = false;
-      } else {
-        button.textContent = "Add to cart";
-        button.addEventListener("click", () => {
-          addToCart(data);
-        });
-      }
 
-    cardDiv.appendChild(button);
-
+    cardDiv.addEventListener("click", () => {
+      window.location.href = `./card/card.html?id=${data.id}&type=${type}`;
+    });
+    
     return cardDiv;
 }
-function isAddedToCart(product) {
-    const cart = JSON.parse(localStorage.getItem("")) || [];
-    return cart.find((p) => p.id == product.id) != null;
-  }
+
 
 
 const container = document.querySelector(".range-card"); 
@@ -54,12 +42,11 @@ fetch(weddingUrl)
 
 .then (item => {
     item.forEach((product)=>{
-        container.appendChild(createCard(product))
+        container.appendChild(createCard(product,"wedding"))
     })
 
 })
 .catch (err => console.log(err))
-
 
 
 const holidayUrl = "https://65d713c727d9a3bc1d7a186e.mockapi.io/meow/api/amour"
@@ -69,9 +56,11 @@ fetch(holidayUrl)
 
 .then (item => {
     item.forEach((product)=>{
-        lastContainer.appendChild(createCard(product))
+        lastContainer.appendChild(createCard(product,"holiday"))
     })
 
 })
 .catch (err => console.log(err))
+
+
 

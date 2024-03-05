@@ -183,3 +183,7 @@ a:hover{
     margin-top: 20px;
 }
 /* footer */
+body{
+    margin: 0;
+    padding: 0;
+}
